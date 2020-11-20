@@ -1,0 +1,24 @@
+<form action="" method="get">
+    <input type="text" name="search" value="{{searchKey}}" />
+    <button type="submit">Rechercher</button>
+</form>
+
+
+<table>
+    <thead>
+        <tr>
+            <td>Code</td>
+            <td>Nom</td>
+            <td>Prix</td>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each products}}
+        <tr>
+            <td>{{this.productCode}}</td>
+            <td>{{this.productName}}</td>
+            <td>{{this.buyPrice}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
